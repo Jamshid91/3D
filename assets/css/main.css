@@ -14,6 +14,13 @@
   font-display: fallback;
 }
 
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -23,6 +30,8 @@ body {
   font-weight: 500;
   font-size: 17px;
   line-height: 25px;
+  overflow-x: hidden;
+  margin: 0 !important;
 }
 
 .bodyStopScroll {
@@ -1123,7 +1132,7 @@ input, textarea, select, button {
     line-height: 35px;
   }
   .services-readMore {
-    width: 100%;
+    width: 98%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
