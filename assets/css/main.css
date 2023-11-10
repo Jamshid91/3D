@@ -1116,8 +1116,7 @@ input, textarea, select, button {
     line-height: 60px;
   }
   .getAquote {
-    width: 110%;
-    margin-left: -2.5%;
+    width: 100%;
   }
   .services__title {
     font-size: 32px;
