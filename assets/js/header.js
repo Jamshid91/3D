@@ -9,7 +9,7 @@ menuShowBtn.addEventListener('click', () => {
 
 getQuote.forEach(get => {
     get.addEventListener('click', () => {
-        menu.classList.toggle('showMenu');
-        menuShowBtn.classList.toggle('clickedMenu')
+        menu.classList.remove('showMenu');
+        menuShowBtn.classList.remove('clickedMenu')
     })
 })
