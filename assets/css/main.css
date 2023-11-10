@@ -1132,7 +1132,7 @@ input, textarea, select, button {
     line-height: 35px;
   }
   .services-readMore {
-    width: 98%;
+    width: 97%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1145,6 +1145,7 @@ input, textarea, select, button {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-left: 1.5%;
   }
   .services .steps {
     margin: 30px 0;
