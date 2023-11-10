@@ -1,0 +1,1231 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url(../font/Poppins-Medium.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(../font/Poppins-SemiBold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: fallback;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins",sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.bodyStopScroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+  padding: 0;
+}
+
+input, textarea, select, button {
+  border: none;
+  outline: none;
+}
+
+.container {
+  max-width: 1600px;
+  padding: 0 30px;
+}
+
+.header {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 16px 0;
+  background: #0D0D0D;
+}
+
+.header-list {
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  margin-right: 35px;
+}
+
+.header-list:hover {
+  color: #D9D9D9;
+}
+
+.header-list:last-child {
+  margin-right: 0;
+}
+
+.header__link {
+  width: 190px;
+  height: 50px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background: #D9D9D9;
+  color: #000;
+  font-size: 20px;
+  line-height: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__link:hover {
+  opacity: 0.8;
+}
+
+.header .menu-btn svg:last-child {
+  display: none;
+}
+
+.header .menu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #000;
+  z-index: 99;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.header .menu-item {
+  padding: 40px 0;
+}
+
+.header .menu-list {
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.header .menu-list:hover {
+  color: #D9D9D9;
+}
+
+.header .menu-list:last-child {
+  margin-bottom: 0;
+}
+
+.header .menu .header__link {
+  margin-bottom: 30px;
+}
+
+.header .clickedMenu svg:first-child {
+  display: none;
+}
+
+.header .clickedMenu svg:last-child {
+  display: block;
+}
+
+.header .showMenu {
+  max-height: 80vh;
+  overflow-y: scroll;
+}
+
+.header .showMenu::-webkit-scrollbar {
+  width: 0;
+}
+
+.wrapper {
+  max-width: 1600px;
+  margin: 50px auto 0;
+  position: relative;
+  z-index: 2;
+}
+
+.wrapper__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.wrapper .row:first-child {
+  padding-top: 130px;
+}
+
+.wrapper__title {
+  font-size: 200px;
+  line-height: 180px;
+  font-weight: 600;
+  color: #0D0D0D;
+  text-transform: uppercase;
+}
+
+.wrapper__title-sub {
+  font-size: 70px;
+  line-height: 63px;
+  color: #454545;
+}
+
+.getAquote {
+  width: 571px;
+  padding: 61px 57px;
+  color: rgba(255, 255, 255, 0.4);
+  background: #0D0D0D;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #fff;
+}
+
+.getAquote__inp, .getAquote__text {
+  width: 100%;
+  height: 44px;
+  background: #1E1E1E;
+  margin-bottom: 15px;
+  padding: 0 20px;
+  border: 1px solid #1E1E1E;
+  color: #D9D9D9;
+}
+
+.getAquote__inp:focus, .getAquote__text:focus {
+  border-color: #454545;
+}
+
+.getAquote__text {
+  height: 115px;
+  resize: none;
+  padding: 14px 20px;
+}
+
+.getAquote-upload {
+  position: relative;
+  width: 100%;
+  height: 130px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.getAquote-upload label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  border: 2px dashed #D9D9D9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.getAquote-upload input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: none;
+}
+
+.getAquote .uploaded {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  border: 2px solid #D9D9D9;
+  background: #0D0D0D;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 18px;
+}
+
+.getAquote .uploaded .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.getAquote__submit {
+  width: 100%;
+  height: 50px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background: #D9D9D9;
+  color: #000;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.getAquote__submit:hover {
+  opacity: 0.8;
+}
+
+.services .container {
+  padding: 0;
+}
+
+.services__img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.services-item {
+  width: 65%;
+}
+
+.services__title {
+  font-size: 70px;
+  line-height: 63px;
+  font-weight: 500;
+  color: #0D0D0D;
+  text-transform: uppercase;
+}
+
+.services__text {
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 500;
+  color: #6B6B6B;
+  margin: 15px 0;
+}
+
+.services-readMore {
+  padding: 10px 35px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background: #D9D9D9;
+  color: #000;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.services-readMore:hover {
+  opacity: 0.9;
+}
+
+.services .steps {
+  margin: 30px 0;
+}
+
+.services .steps .step {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.services .steps .step img {
+  margin-right: 12px;
+}
+
+.services .steps svg {
+  margin: 0 12px;
+}
+
+.services-printing {
+  background: #0D0D0D;
+  margin-top: -100px;
+}
+
+.services-printing .services__title {
+  color: #fff;
+}
+
+.services-printing .services__text {
+  color: #979797;
+}
+
+.cnc-page .wrapper {
+  background-image: url(../img/png/cnc-bg.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  margin-top: 0;
+}
+
+.cnc-page .wrapper .getAquote {
+  border: none;
+}
+
+.cnc-page .printing__img {
+  width: 100%;
+  height: 630px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cnc-page .printing .printing-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 48px;
+  z-index: 5;
+}
+
+.cnc-page .printing .printing-next:hover svg path {
+  stroke: #979797;
+}
+
+.cnc-page .services-revitalize .services__text {
+  width: 70%;
+}
+
+.cnc-page .quality {
+  max-width: 1600px;
+  margin: 0 auto;
+  border-top: 1px solid #E8E8E8;
+  padding: 100px 0;
+}
+
+.cnc-page .quality-item {
+  padding: 15px 0;
+  border-top: 1px solid #E8E8E8;
+  cursor: pointer;
+}
+
+.cnc-page .quality-item:first-child {
+  margin-top: 100px;
+}
+
+.cnc-page .quality-item:last-child {
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.cnc-page .quality-item__title {
+  font-size: 30px;
+  line-height: 27px;
+  font-weight: 500;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  width: 33%;
+}
+
+.cnc-page .quality-item__text {
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 500;
+  color: #6B6B6B;
+  width: 33%;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+}
+
+.cnc-page .quality-item__btn {
+  width: 33%;
+}
+
+.cnc-page .quality-item__btn svg {
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+}
+
+.cnc-page .quality .showText .quality-item__text {
+  -webkit-line-clamp: 100;
+}
+
+.cnc-page .quality .showText .quality-item__btn svg {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.cnc-page .plastic {
+  background: #0D0D0D;
+  padding: 100px 0;
+  color: #F7F8FA;
+  font-weight: 500;
+}
+
+.cnc-page .plastic-item {
+  margin-top: 100px;
+  width: 60%;
+}
+
+.cnc-page .plastic-item__list {
+  font-size: 50px;
+  line-height: 45px;
+  color: #3D3D3D;
+  text-transform: uppercase;
+  width: 33%;
+  margin-bottom: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.cnc-page .plastic-item .active {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.cnc-page .cnc {
+  margin: 100px 0;
+}
+
+.cnc-page .cnc__title {
+  margin-bottom: 20px;
+}
+
+.cnc-page .cnc__img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.cnc-page .cnc-item {
+  margin-top: 20px;
+}
+
+.cnc-page .cnc-item__num {
+  font-size: 30px;
+  line-height: 27px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cnc-page .cnc-item__num::before {
+  content: '';
+  display: block;
+  width: 26px;
+  height: 26px;
+  background: #0D0D0D;
+  margin-right: 5px;
+}
+
+.cnc-page .cnc-item__text {
+  font-size: 17px;
+  line-height: 25px;
+  color: #6B6B6B;
+}
+
+.cnc-page .cnc-item:last-child .cnc-item__text {
+  width: 80%;
+}
+
+.cnc-page .offer {
+  margin-bottom: 100px;
+}
+
+.cnc-page .offer-item {
+  width: 55%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.cnc-page .offer-item__title {
+  font-size: 30px;
+  line-height: 27px;
+  margin: 15px 0;
+  letter-spacing: -2px;
+}
+
+.cnc-page .offer-item__text {
+  font-size: 17px;
+  line-height: 25px;
+  color: #6B6B6B;
+}
+
+.title__text {
+  font-size: 70px;
+  line-height: 63px;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+.modeling-page .wrapper {
+  background-image: url(../img/png/modeling-bg.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: left;
+  margin-top: 0;
+}
+
+.modeling-page .wrapper .getAquote {
+  border: none;
+}
+
+.modeling-page .wrapper__title {
+  color: #fff;
+}
+
+.howDo .container {
+  padding: 0;
+}
+
+.howDo__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.howDo__text {
+  font-size: 17px;
+  line-height: 27px;
+  color: #6B6B6B;
+}
+
+.howDo-num {
+  font-size: 30px;
+  line-height: 27px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.howDo-num::before {
+  content: '';
+  display: block;
+  width: 26px;
+  height: 26px;
+  background: #0D0D0D;
+  margin-right: 5px;
+}
+
+.howDo-left {
+  width: 60%;
+  padding-top: 35px;
+}
+
+.howDo-left__sub {
+  width: 50%;
+  margin: 15px 0 60px;
+}
+
+.howDo-left .info {
+  width: 65%;
+}
+
+.howDo-left-item:first-child {
+  width: 40%;
+}
+
+.howDo-left-item:first-child .howDo__text {
+  margin: 15px 0 35px;
+}
+
+.howDo-left-item:first-child .info {
+  width: 90%;
+  padding: 15px 0;
+}
+
+.howDo-left-item:last-child {
+  width: 60%;
+}
+
+.howDo-left-top .howDo-left-item:first-child {
+  width: 60%;
+}
+
+.howDo-left-top .howDo-left-item:last-child {
+  width: 40%;
+}
+
+.howDo-right {
+  width: 40%;
+}
+
+.howDo-right .info {
+  width: 65%;
+}
+
+.scanning-page .wrapper {
+  background-image: url(../img/png/scanning-bg.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: left;
+  margin-top: 0;
+}
+
+.scanning-page .wrapper .getAquote {
+  border: none;
+}
+
+.scanning-page .wrapper__title {
+  color: #fff;
+}
+
+.footer {
+  padding: 60px 0;
+  background: #0D0D0D;
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.footer-item:first-child {
+  margin-right: 170px;
+}
+
+.footer-item__title {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.footer-item__link {
+  color: #868686;
+  margin-bottom: 5px;
+}
+
+.footer .social:hover {
+  opacity: 0.9;
+}
+
+.footer .social:first-child {
+  margin-right: 5px;
+}
+
+@media (max-width: 1599px) {
+  .wrapper__img {
+    width: 40%;
+  }
+  .wrapper .row:first-child {
+    padding-top: 130px;
+  }
+  .wrapper__title {
+    font-size: 160px;
+    line-height: 140px;
+  }
+  .wrapper__title-sub {
+    font-size: 50px;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .wrapper__title {
+    font-size: 120px;
+    line-height: 100px;
+    white-space: nowrap;
+  }
+  .wrapper__title-sub {
+    font-size: 40px;
+    line-height: 35px;
+  }
+  .getAquote {
+    width: 500px;
+    padding: 40px 20px;
+  }
+  .services-item {
+    width: 95%;
+  }
+  .services__title {
+    font-size: 40px;
+    line-height: 35px;
+  }
+  .howDo .container {
+    padding: 0 0 0 20px;
+  }
+  .howDo__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .howDo-left {
+    width: 70%;
+    padding-top: 35px;
+  }
+  .howDo-left .title__text {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .howDo-left .info {
+    width: 75%;
+  }
+  .howDo-left-item:first-child {
+    width: 50%;
+  }
+  .howDo-left-item:first-child .howDo__text {
+    margin: 15px 0 35px;
+  }
+  .howDo-left-item:first-child .info {
+    width: 95%;
+  }
+  .howDo-left-item:last-child {
+    width: 50%;
+  }
+  .howDo-left-top .howDo-left-item:first-child {
+    width: 50%;
+  }
+  .howDo-left-top .howDo-left-item:last-child {
+    width: 50%;
+  }
+  .howDo-right {
+    width: 30%;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    padding: 0 20px;
+  }
+  .header {
+    padding: 0;
+  }
+  .header-logo {
+    margin-left: -15px;
+  }
+  .header-logo .logo {
+    width: 120px;
+  }
+  .title__text {
+    font-size: 40px;
+    line-height: 35px;
+  }
+  .wrapper {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .wrapper__img {
+    width: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .wrapper__title {
+    font-size: 120px;
+    line-height: 100px;
+    white-space: nowrap;
+  }
+  .wrapper__title-sub {
+    font-size: 40px;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+  .services {
+    margin-bottom: 50px !important;
+  }
+  .services-item {
+    width: 100%;
+  }
+  .services__title {
+    font-size: 40px;
+    line-height: 35px;
+  }
+  .services .steps {
+    margin: 30px 0;
+  }
+  .services .steps .step {
+    font-size: 18px;
+    line-height: 24px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .services .steps .step img {
+    margin-right: 8px;
+  }
+  .services .steps svg {
+    margin: 0 12px;
+  }
+  .services {
+    margin-bottom: 40px;
+  }
+  .services__title {
+    margin-bottom: 20px;
+  }
+  .services-printing {
+    margin-top: -30px;
+    padding: 70px 0 30px;
+  }
+  .footer {
+    padding: 30px 0;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .footer-item {
+    margin: 30px 0;
+  }
+  .footer-item:first-child {
+    margin-right: 100px;
+  }
+  .footer .social:hover {
+    opacity: 0.9;
+  }
+  .footer .social:first-child {
+    margin-right: 5px;
+  }
+  .cnc-page .wrapper {
+    margin-bottom: 30px;
+  }
+  .cnc-page .wrapper .row:first-child {
+    padding-top: 40px;
+    text-align: left;
+  }
+  .cnc-page .quality {
+    padding: 50px 0;
+  }
+  .cnc-page .quality .services__text {
+    margin: 0;
+  }
+  .cnc-page .quality-item {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    position: relative;
+  }
+  .cnc-page .quality-item:first-child {
+    margin-top: 40px;
+  }
+  .cnc-page .quality-item__title {
+    font-size: 26px;
+    line-height: 20px;
+    width: 80%;
+  }
+  .cnc-page .quality-item__text {
+    font-size: 16px;
+    line-height: 24px;
+    width: 80%;
+    margin-top: 15px;
+  }
+  .cnc-page .quality-item__btn {
+    width: auto;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .cnc-page .quality-item__btn svg {
+    -webkit-transition: .3s all;
+    -o-transition: .3s all;
+    transition: .3s all;
+  }
+  .cnc-page .plastic {
+    padding: 50px 0;
+  }
+  .cnc-page .plastic-item {
+    margin-top: 40px;
+    width: 75%;
+    margin-bottom: 30px;
+  }
+  .cnc-page .plastic-item__list {
+    font-size: 30px;
+    line-height: 25px;
+  }
+  .cnc-page .offer-item {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .cnc-page .offer-item__icon {
+    width: 100px;
+  }
+  .modeling-page .wrapper .row:first-child,
+  .scanning-page .wrapper .row:first-child {
+    padding-top: 50px;
+  }
+  .modeling-page .wrapper__title,
+  .scanning-page .wrapper__title {
+    font-size: 100px;
+    line-height: 90px;
+  }
+}
+
+@media (max-width: 767px) {
+  .howDo {
+    margin-bottom: 40px;
+  }
+  .howDo .container {
+    padding: 0 20px;
+  }
+  .howDo__text {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 15px 0 0 0 !important;
+  }
+  .howDo-num {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .howDo-num::before {
+    width: 20px;
+    height: 20px;
+  }
+  .howDo-left {
+    width: 100%;
+    padding-top: 35px;
+  }
+  .howDo-left__sub {
+    width: 100%;
+    margin: 15px 0 20px;
+  }
+  .howDo-left .title__text {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .howDo-left-item {
+    width: 100%;
+  }
+  .howDo-left-item:first-child {
+    width: 100%;
+  }
+  .howDo-left-item:first-child .howDo__text {
+    margin: 15px 0 35px;
+  }
+  .howDo-left-item:last-child {
+    width: 100%;
+  }
+  .howDo-left-top .howDo-left-item:first-child {
+    width: 100%;
+  }
+  .howDo-left-top .howDo-left-item:last-child {
+    width: 100%;
+  }
+  .howDo-right {
+    width: 100%;
+  }
+  .howDo .info {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding: 0 15px;
+  }
+  .wrapper {
+    overflow: hidden;
+  }
+  .wrapper__title {
+    font-size: 70px;
+    line-height: 60px;
+  }
+  .getAquote {
+    width: 110%;
+    margin-left: -2.5%;
+  }
+  .services__title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+  .services-readMore {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .services .steps {
+    margin: 30px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+    -webkit-align-items: start !important;
+        -ms-flex-align: start !important;
+            align-items: start !important;
+  }
+  .services .steps .step {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .services .steps svg {
+    display: block;
+    margin: 15px 0;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .services {
+    margin-bottom: 40px;
+  }
+  .services__title {
+    margin-bottom: 20px;
+  }
+  .title__text {
+    font-size: 32px;
+    line-height: 30px;
+  }
+  .cnc-page .services {
+    margin-bottom: 0 !important;
+  }
+  .cnc-page .services .services__text {
+    width: 100%;
+  }
+  .cnc-page .printing__img {
+    height: 300px;
+  }
+  .cnc-page .printing .printing-next {
+    right: 10px;
+    z-index: 5;
+  }
+  .cnc-page .printing .printing-next svg {
+    width: 40px;
+  }
+  .cnc-page .plastic-item {
+    width: 85%;
+  }
+  .cnc-page .plastic-item__list {
+    font-size: 24px;
+    line-height: 20px;
+  }
+  .cnc-page .plastic__img {
+    height: 300px;
+  }
+  .cnc-page .cnc {
+    margin: 40px 0;
+  }
+  .cnc-page .offer {
+    margin-bottom: 40px;
+  }
+  .modeling-page .wrapper__title,
+  .scanning-page .wrapper__title {
+    font-size: 60px;
+    line-height: 50px;
+  }
+  .footer {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .footer-item {
+    margin: 30px 0;
+  }
+  .footer-item:first-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .footer-item:last-child {
+    margin-top: 10px;
+  }
+  .footer .social img {
+    width: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}

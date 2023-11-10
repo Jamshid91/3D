@@ -1,0 +1,445 @@
+@media (max-width: 1599px) {
+    .wrapper {
+        &__img {
+          width: 40%;
+        }
+        .row:first-child {
+          padding-top: 130px;
+        }
+        &__title {
+          font-size: 160px;
+          line-height: 140px;
+        }
+        &__title-sub {
+          font-size: 50px;
+          line-height: 45px;
+        }
+      } 
+}
+
+@media (max-width: 1400px) {    
+    .wrapper {
+    &__title {
+      font-size: 120px;
+      line-height: 100px;
+      white-space: nowrap;
+    }
+    &__title-sub {
+      font-size: 40px;
+      line-height: 35px;
+    }
+  } 
+  .getAquote {
+    width: 500px;
+    padding: 40px 20px;
+  }
+  .services {
+    &-item {
+        width: 95%;
+      }
+    &__title {
+        font-size: 40px;
+        line-height: 35px;
+    }
+  }
+  
+.howDo {
+    .container {
+      padding: 0 0 0 20px;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &-left {
+      width: 70%;
+      padding-top: 35px;
+      .title__text {
+          font-size: 40px;
+          line-height: 40px;
+      }
+      .info {
+        width: 75%;
+      }
+      &-item {
+        &:first-child {
+          width: 50%;
+          .howDo__text {
+            margin: 15px 0 35px;
+          }
+          .info {
+            width: 95%;
+          }
+        }
+        &:last-child {
+          width: 50%;
+        }
+      }
+      &-top {
+        .howDo-left-item {
+          &:first-child {
+            width: 50%;
+          }
+          &:last-child {
+            width: 50%;
+          }
+        }
+      }
+    }
+    &-right {
+      width: 30%;
+    }
+  }
+}
+
+@media (max-width: 991px) {   
+    .container {
+        padding: 0 20px;
+    } 
+    .header {
+        padding: 0;
+        &-logo {
+            margin-left: -15px;
+            .logo {
+                width: 120px;
+            }
+        }
+    }
+    .title__text {
+        font-size: 40px;
+        line-height: 35px;
+    }
+    .wrapper {
+        margin-top: 10px;
+        text-align: center;
+        &__img {
+            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    &__title {
+      font-size: 120px;
+      line-height: 100px;
+      white-space: nowrap;
+    }
+    &__title-sub {
+      font-size: 40px;
+      line-height: 35px;
+      margin-bottom: 20px;
+    }
+  } 
+  .services {
+    margin-bottom: 50px !important;
+    &-item {
+        width: 100%;
+      }
+    &__title {
+        font-size: 40px;
+        line-height: 35px;
+    }
+    .steps {
+        margin: 30px 0;
+        .step {
+          font-size: 18px;
+          line-height: 24px;
+          display: flex;
+          align-items: center;
+          img {
+            margin-right: 8px;
+          }
+        }
+        svg {
+          margin: 0 12px;
+        }
+      }
+  }
+ .services {
+    margin-bottom: 40px;
+    &__title {
+        margin-bottom: 20px;
+    }
+ }
+    .services-printing {
+        margin-top: -30px;
+        padding: 70px 0 30px;
+    }
+    .footer {
+        padding: 30px 0;
+        font-size: 18px;
+        line-height: 26px;
+        &-item {
+            margin: 30px 0;
+          &:first-child {
+            margin-right: 100px;
+          }
+        }
+        .social {
+          &:hover {
+            opacity: 0.9;
+          }
+          &:first-child {
+            margin-right: 5px;
+          }
+        }
+      }
+      .cnc-page {
+        .wrapper {
+            margin-bottom: 30px;
+            .row:first-child {
+                padding-top: 40px;
+                text-align: left;
+            }
+        } 
+        .quality {
+            padding: 50px 0;
+            .services__text {
+                margin: 0;
+            }
+            &-item {
+                flex-wrap: wrap;
+                position: relative;
+                &:first-child {
+                  margin-top: 40px;
+                }
+                &__title {
+                  font-size: 26px;
+                  line-height: 20px;
+                  width: 80%;
+                }
+                &__text {
+                  font-size: 16px;
+                  line-height: 24px;
+                  width: 80%;
+                  margin-top: 15px;
+                }
+                &__btn {
+                  width: auto;
+                  position: absolute;
+                  top: 15px;
+                  right: 15px;
+                  svg {
+                    transition: .3s all;
+                  }
+                }
+              }
+        }
+        .plastic {
+            padding: 50px 0;
+            &-item {
+              margin-top: 40px;
+              width: 75%;
+              margin-bottom: 30px;
+              &__list {
+                font-size: 30px;
+                line-height: 25px;
+              }
+            }
+          }
+          .offer {
+            &-item {
+                width: 100%;
+                margin-top: 30px;
+                &__icon {
+                    width: 100px;
+                }
+            }
+          }
+      }
+      
+ .modeling-page,
+ .scanning-page {
+    .wrapper {
+        .row:first-child {
+        padding-top: 50px;
+        }
+        &__title {
+            font-size: 100px;
+            line-height: 90px;
+        }
+    }
+ }
+}
+
+@media (max-width: 767px) {
+    
+ .howDo {
+    margin-bottom: 40px;
+    .container {
+      padding: 0 20px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 16px;
+      margin: 15px 0 0 0 !important;
+    }
+    &-num {
+      font-size: 24px;
+      line-height: 24px;
+      &::before {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    &-left {
+      width: 100%;
+      padding-top: 35px;
+      &__sub {
+        width: 100%;
+        margin: 15px 0 20px;
+      }
+      .title__text {
+          font-size: 28px;
+          line-height: 28px;
+      }
+      &-item {
+        width: 100%;
+        &:first-child {
+          width: 100%;
+          .howDo__text {
+            margin: 15px 0 35px;
+          }
+        }
+        &:last-child {
+          width: 100%;
+        }
+      }
+      &-top {
+        .howDo-left-item {
+          &:first-child {
+            width: 100%;
+          }
+          &:last-child {
+            width: 100%;
+          }
+        }
+      }
+
+    }
+    &-right {
+      width: 100%;
+    }
+    
+    .info {
+        width: 100% !important;
+      }
+  }
+}
+
+@media (max-width: 575px) {  
+    .container {
+        padding: 0 15px;
+    }
+    .wrapper {
+        overflow: hidden;
+    &__title {
+      font-size: 70px;
+      line-height: 60px;
+    }
+  } 
+  .getAquote {
+    width: 110%;
+    margin-left: -2.5%;
+  }
+  .services {
+    &__title {
+        font-size: 32px;
+        line-height: 35px;
+    }
+    &-readMore {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .steps {
+        margin: 30px 0;
+        flex-direction: column;
+        align-items: start !important;
+        .step {
+          font-size: 20px;
+          line-height: 25px;
+        }
+        svg {
+            display: block;
+            margin: 15px 0;
+          transform: rotate(90deg);
+        }
+      }
+  }
+ .services {
+    margin-bottom: 40px;
+    &__title {
+        margin-bottom: 20px;
+    }
+ }
+.title__text {
+    font-size: 32px;
+    line-height: 30px;
+}
+ .cnc-page {
+    .services {
+        margin-bottom: 0 !important;
+        .services__text {
+            width: 100%;
+        }
+    }
+  .printing {
+    &__img {
+      height: 300px;
+    }
+    .printing-next {
+      right: 10px;
+      z-index: 5;
+      svg {
+        width: 40px;
+      }
+    }
+  }
+  .plastic {
+    &-item {
+    width: 85%;
+    &__list {
+      font-size: 24px;
+      line-height: 20px;
+    }
+  }
+    &__img {
+        height: 300px;
+    }
+  }
+  .cnc {
+    margin: 40px 0;
+  }
+  .offer {
+    margin-bottom: 40px;
+  }
+ }
+ .modeling-page,
+ .scanning-page {
+    .wrapper {
+        &__title {
+            font-size: 60px;
+            line-height: 50px;
+        }
+    }
+ }
+    .footer {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        &-item {
+            margin: 30px 0;
+          &:first-child {
+            margin-right: 0;
+            margin-bottom: 0;
+          }
+          &:last-child {
+            margin-top: 10px;
+          }
+        }
+        .social img {
+            width: 30px;
+            object-fit: contain;
+        }
+      }
+}

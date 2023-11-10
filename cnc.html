@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>CNC</title>
+    <link rel="shortcut icon" href="assets/img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/plugin/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/plugin/swiper.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header class="header position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex align-items-center justify-content-between">
+                    <a href="#" class="header-logo">
+                        <img src="assets/img/png/logo.png" alt="" class="logo">
+                    </a>
+                    <ul class="header-item d-none d-lg-flex">
+                        <li class="header-list"><a href="./index.html">3D services</a></li>
+                        <li class="header-list"><a href="./cnc.html">CNC</a></li>
+                        <li class="header-list"><a href="./modeling.html">3D Modeling</a></li>
+                        <li class="header-list"><a href="./scanning.html">3D Scanning</a></li>
+                    </ul>
+                    <a href="#form" class="header__link d-none d-lg-flex">Get a quote</a>
+                    <div class="menu-btn d-lg-none">
+                        <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.9167 11.0666H1.08333C0.485333 11.0666 0 10.5812 0 9.98322C0 9.38522 0.485333 8.89988 1.08333 8.89988H24.9167C25.5147 8.89988 26 9.38522 26 9.98322C26 10.5812 25.5147 11.0666 24.9167 11.0666ZM24.9167 2.7609H1.08333C0.485333 2.7609 0 2.27557 0 1.67757C0 1.07957 0.485333 0.594238 1.08333 0.594238H24.9167C25.5147 0.594238 26 1.07957 26 1.67757C26 2.27557 25.5147 2.7609 24.9167 2.7609ZM24.9167 19.3719H1.08333C0.485333 19.3719 0 18.8866 0 18.2886C0 17.6906 0.485333 17.2053 1.08333 17.2053H24.9167C25.5147 17.2053 26 17.6906 26 18.2886C26 18.8866 25.5147 19.3719 24.9167 19.3719Z" fill="#fff"/>
+                        </svg>
+                        <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="Vector" d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="menu">
+            <ul class="menu-item">
+                <li class="menu-list"><a href="./index.html">3D services</a></li>
+                <li class="menu-list"><a href="./cnc.html">CNC</a></li>
+                <li class="menu-list"><a href="./modeling.html">3D Modeling</a></li>
+                <li class="menu-list"><a href="./scanning.html">3D Scanning</a></li>
+            </ul>
+            <a href="#form" class="header__link">Get a quote</a>
+        </div>
+    </header>
+
+    <div class="cnc-page">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex align-items-center align-items-xl-end justify-content-center justify-content-xl-between flex-column-reverse flex-xl-row">
+                        <form id="form" class="getAquote">
+                            <input type="text" class="getAquote__inp" placeholder="Name" required>
+                            <input type="email" class="getAquote__inp" placeholder="Email" required>
+                            <textarea class="getAquote__text" placeholder="Message" required></textarea>
+                            <div class="getAquote-upload">
+                                <label for="upload">
+                                    <input type="file" id="upload">
+                                    <span>Upload file to get a quote</span>
+                                </label>
+                                <div class="uploaded d-none">
+                                    <span class="uploaded__info"></span>
+                                    <span class="close">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                            <path d="M9.52664 8.50001L16.6179 1.40876C16.6893 1.34224 16.7465 1.26203 16.7862 1.1729C16.826 1.08378 16.8473 0.987571 16.849 0.890015C16.8507 0.792459 16.8328 0.695556 16.7963 0.605086C16.7597 0.514616 16.7053 0.432433 16.6363 0.36344C16.5673 0.294447 16.4852 0.240057 16.3947 0.203515C16.3042 0.166973 16.2073 0.149027 16.1098 0.150748C16.0122 0.152469 15.916 0.173822 15.8269 0.213533C15.7377 0.253244 15.6575 0.310499 15.591 0.381884L8.49976 7.47313L1.40851 0.381884C1.27078 0.253544 1.08861 0.183674 0.900383 0.186995C0.712154 0.190317 0.532562 0.266569 0.399443 0.399687C0.266324 0.532806 0.190072 0.712398 0.186751 0.900627C0.18343 1.08886 0.253299 1.27103 0.381639 1.40876L7.47289 8.50001L0.381639 15.5913C0.310255 15.6578 0.253 15.738 0.213289 15.8271C0.173578 15.9162 0.152225 16.0124 0.150504 16.11C0.148782 16.2076 0.166728 16.3045 0.203271 16.3949C0.239813 16.4854 0.294203 16.5676 0.363196 16.6366C0.432189 16.7056 0.514372 16.76 0.604842 16.7965C0.695312 16.833 0.792215 16.851 0.889771 16.8493C0.987327 16.8475 1.08354 16.8262 1.17266 16.7865C1.26178 16.7468 1.342 16.6895 1.40851 16.6181L8.49976 9.52688L15.591 16.6181C15.6575 16.6895 15.7377 16.7468 15.8269 16.7865C15.916 16.8262 16.0122 16.8475 16.1098 16.8493C16.2073 16.851 16.3042 16.833 16.3947 16.7965C16.4852 16.76 16.5673 16.7056 16.6363 16.6366C16.7053 16.5676 16.7597 16.4854 16.7963 16.3949C16.8328 16.3045 16.8507 16.2076 16.849 16.11C16.8473 16.0124 16.826 15.9162 16.7862 15.8271C16.7465 15.738 16.6893 15.6578 16.6179 15.5913L9.52664 8.50001Z" fill="#fff"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <button class="getAquote__submit">Get a quote</button>
+                        </form>
+                        <div class="d-flex justify-content-end flex-column mb-4">
+                            <span class="wrapper__title">3D</span>
+                            <span class="wrapper__title">PRINTING</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <div class="services printing">
+            <div class="container">
+                <div class="row d-flex align-items-center flex-row-reverse">
+                    <div class="col-lg-7">
+                        <h2 class="services__title d-lg-none">Why 3D Printing?</h2>
+                        <div class="swiper swiper-printing position-relative">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/img/png/p5.png" alt="" class="printing__img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/png/p2.png" alt="" class="printing__img">
+                                </div>
+                            </div>
+                            <div class="printing-next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="106" height="125" viewBox="0 0 106 125" fill="none">
+                                    <g clip-path="url(#clip0_117_77)">
+                                      <path d="M-21.2 62.5403H82.68M82.68 62.5403L51.5978 23.3203M82.68 62.5403L51.5978 97.5203" stroke="white" stroke-width="3"/>
+                                      <path d="M52.0254 9.92785C65.6884 9.67855 78.8907 14.867 88.7282 24.3519C98.5656 33.8368 104.232 46.8411 104.482 60.504C104.731 74.167 99.5424 87.3693 90.0575 97.2068C80.5726 107.044 67.5683 112.711 53.9054 112.96" stroke="white" stroke-opacity="0.69"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_117_77">
+                                        <rect width="106" height="125" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 d-flex justify-content-center">
+                        <div class="services-item">
+                            <h2 class="services__title d-none d-lg-block">Why 3D Printing?</h2>
+                            <p class="services__text">Unleash Your Imagination
+                                We understand that creativity knows no bounds. 3D printing is the perfect tool to unlock your creative potential. Whether you're an artist, designer, engineer, or
+                                simply someone with a vision, we're here to help you turn your ideas into physical objects. From intricate sculptures and unique fashion accessories to functional prototypes and custom parts, 3D printing makes it all possible. <strong>If you
+                                    can dream it, we can print it!</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <div class="services services-revitalize">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-5">
+                        <h2 class="services__title d-lg-none">Revitalize Your Old Treasures</h2>
+                        <img src="assets/img/png/p6.png" alt="" class="services__img">
+                    </div>
+                    <div class="col-lg-7 d-flex justify-content-center">
+                        <div class="services-item">
+                            <h2 class="services__title d-none d-lg-block">Revitalize Your Old Treasures</h2>
+                            <p class="services__text">In addition to sparking innovation, 3D printing is an eco-friendly solution to rejuvenate your aging belongings. Don't let your cherished items gather dust in the attic when they can be brought back to life with a fresh, modern twist. We can give your old a new lease on life through our 3D printing services</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services quality">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 d-flex justify-content-center">
+                        <div class="services-item">
+                            <h2 class="services__title">Quality Assurance</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 d-flex justify-content-center">
+                        <div class="services-item">
+                            <p class="services__text">We prioritize quality and precision in every project. You can
+                                trust us to deliver 3D prints that meet or exceed your expectations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="quality-item d-flex align-items-start justify-content-between">
+                            <h3 class="quality-item__title">Customization</h3>
+                            <p class="quality-item__text">Your project is unique, and we treat it that way. We offer a wide
+                                range of materials and finishing options to customize your prints according to
+                                your specific requirements.</p>
+                            <div class="quality-item__btn d-flex justify-content-end">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="12" viewBox="0 0 23 12" fill="none">
+                                    <path d="M23 5.7619L2 5.7619M2 5.7619L5.31579 11M2 5.7619L5.31579 1" stroke="#0D0D0D" stroke-width="2"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="quality-item d-flex align-items-start justify-content-between">
+                            <h3 class="quality-item__title">Affordability</h3>
+                            <p class="quality-item__text">Your project is unique, and we treat it that way. We offer a wide
+                                range of materials and finishing options to customize your prints according to
+                                your specific requirements.</p>
+                            <div class="quality-item__btn d-flex justify-content-end">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="12" viewBox="0 0 23 12" fill="none">
+                                    <path d="M23 5.7619L2 5.7619M2 5.7619L5.31579 11M2 5.7619L5.31579 1" stroke="#0D0D0D" stroke-width="2"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="quality-item d-flex align-items-start justify-content-between">
+                            <h3 class="quality-item__title">Fast Turnaround</h3>
+                            <p class="quality-item__text">Your project is unique, and we treat it that way. We offer a wide
+                                range of materials and finishing options to customize your prints according to
+                                your specific requirements.</p>
+                            <div class="quality-item__btn d-flex justify-content-end">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="12" viewBox="0 0 23 12" fill="none">
+                                    <path d="M23 5.7619L2 5.7619M2 5.7619L5.31579 11M2 5.7619L5.31579 1" stroke="#0D0D0D" stroke-width="2"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="plastic">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="title__text">Plastic Technologies size of printing field:220x220x250</h2>
+                        <ul class="plastic-item d-flex flex-wrap">
+                            <li class="plastic-item__list active">ABS</li>
+                            <li class="plastic-item__list">PETG</li>
+                            <li class="plastic-item__list">TPU</li>
+                            <li class="plastic-item__list">PA</li>
+                            <li class="plastic-item__list">PLA</li>
+                            <li class="plastic-item__list">wooD</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center">
+                        <img src="assets/img/png/cub.png" alt="" class="plastic__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cnc">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-10">
+                        <h2 class="title__text">cnc</h2>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-xl-5 pe-lg-5 col-md-6">
+                        <div class="cnc-item">
+                            <div class="cnc-item__num">01</div>
+                            <p class="cnc-item__text">We specialize in crafting high-quality parts in both steel and aluminum to meet
+                                all your needs. Whether you're seeking precision components for your
+                                professional endeavors or looking for custom parts for personal projects.</p>
+                        </div>
+                        <div class="cnc-item">
+                            <div class="cnc-item__num">02</div>
+                            <p class="cnc-item__text">Small and Large Parts: Whether you require small, intricate components or large, robust
+                                parts, we are equipped to deliver exactly what you need, Our CNC machines are versatile
+                                and can handle a wide range of part sizes, ensuring that no project is too big or too.
+                                small for us to handle.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 offset-xl-1 pe-xl-5 d-none d-md-flex">
+                        <img src="assets/img/png/cnc.png" alt="" class="cnc__img">
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center mt-md-3">
+                    <div class="col-xl-5 col-md-6 d-none d-md-flex">
+                        <img src="assets/img/png/cnc2.png" alt="" class="cnc__img">
+                    </div>
+                    <div class="col-xl-4 col-md-6 offset-xl-1">
+                        <div class="cnc-item">
+                            <div class="cnc-item__num">03</div>
+                            <p class="cnc-item__text">Our expertise extends to both steel and aluminum, offering you a wide range of options
+                                to suit your specific requirements. Steel provides durability, strength, and stability,
+                                making it ideal for heavy-duty applications, while aluminum offers lightweight and
+                                corrosion-resistant properties, perfect for aerospace, automotive, and various other
+                                industries. Whatever your choice, rest assured that we have the know-how to work with
+                                these materials effectively.
+                                </p>
+                        </div>
+                        <div class="cnc-item">
+                            <div class="cnc-item__num">04</div>
+                            <p class="cnc-item__text">Every project is unique, and we understand that one size doesn't fit all. That's why we
+                                offer tailor-made solutions to meet your specific requirements. Our team collaborates
+                                closely with you to understand your project's intricacies and deliver parts that exceed
+                                your expectations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="offer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-10">
+                        <h2 class="title__text">We offer competitive pricing without compromising on quality. You can trust us
+                            to provide cost-effective solutions for all your CNC manufacturing needs.</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 d-flex justify-content-center align-items-start">
+                        <div class="offer-item">
+                            <img src="assets/img/png/o1.png" alt="" class="offer-item__icon">
+                            <h5 class="offer-item__title">IDEA</h5>
+                            <p class="offer-item__text">Ideas help us imagine and create new things in the world.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                        <div class="offer-item">
+                            <img src="assets/img/png/o2.png" alt="" class="offer-item__icon">
+                            <h5 class="offer-item__title">MODEL</h5>
+                            <p class="offer-item__text">Now, when your idea
+                                is ready you need a good prototype.</p>
+                            <p class="offer-item__text">You have two options: either provide us with your design, or we can handle it for you.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                        <div class="offer-item">
+                            <img src="assets/img/png/o3.png" alt="" class="offer-item__icon">
+                            <h5 class="offer-item__title">PRINTING</h5>
+                            <p class="offer-item__text">Whenever your design is ready, we will do our best to make you
+                                happy and proud of your model.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between align-items-center flex-column flex-lg-row">
+                    <a href="./index.html" class="footer-logo">
+                        <img src="assets/img/png/logo.png" alt="" class="logo">
+                    </a>
+                    <div class="d-flex flex-column flex-sm-row">
+                        <div class="footer-item d-flex flex-column">
+                            <h6 class="footer-item__title">Phone numbers</h6>
+                            <a href="tel:+19174365509" class="footer-item__link">+1(917)436-5509</a>
+                            <a href="tel:+16462441228" class="footer-item__link">+1(646)244-1228</a>
+                            <a href="tel:+1646239447" class="footer-item__link">+1(646)239-4477</a>
+                        </div>
+                        <div class="footer-item d-flex flex-column">
+                            <h6 class="footer-item__title">Email</h6>
+                            <a href="mailto:scibim4u@gmai.com" class="footer-item__link">scibim4u@gmai.com</a>
+                            <h6 class="footer-item__title">Location</h6>
+                            <a href="#" class="footer-item__link">Brooklyn, NY</a>
+                        </div>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" class="social">
+                            <img src="assets/img/svg/f.svg" alt="">
+                        </a>
+                        <a href="#" class="social">
+                            <img src="assets/img/svg/i.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="assets/js/plugin/swiper.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/cnc.js"></script>
+</body>
+</html>
