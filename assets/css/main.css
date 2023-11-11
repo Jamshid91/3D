@@ -208,6 +208,10 @@ input, textarea, select, button {
   z-index: 2;
 }
 
+.wrapper .container {
+  padding: 0;
+}
+
 .wrapper__img {
   position: absolute;
   top: 0;
@@ -233,7 +237,7 @@ input, textarea, select, button {
 }
 
 .getAquote {
-  width: 571px;
+  width: 560px;
   padding: 61px 57px;
   color: rgba(255, 255, 255, 0.4);
   background: #0D0D0D;
@@ -450,6 +454,7 @@ input, textarea, select, button {
 
 .cnc-page .wrapper .getAquote {
   border: none;
+  margin-right: 30px;
 }
 
 .cnc-page .printing__img {
@@ -618,6 +623,7 @@ input, textarea, select, button {
   font-size: 17px;
   line-height: 25px;
   color: #6B6B6B;
+  margin-top: 7px;
 }
 
 .cnc-page .cnc-item:last-child .cnc-item__text {
@@ -665,14 +671,11 @@ input, textarea, select, button {
 
 .modeling-page .wrapper .getAquote {
   border: none;
+  margin-right: 30px;
 }
 
 .modeling-page .wrapper__title {
   color: #fff;
-}
-
-.howDo .container {
-  padding: 0;
 }
 
 .howDo__img {
@@ -711,6 +714,10 @@ input, textarea, select, button {
   margin-right: 5px;
 }
 
+.howDo .info {
+  width: 90%;
+}
+
 .howDo-left {
   width: 60%;
   padding-top: 35px;
@@ -719,10 +726,6 @@ input, textarea, select, button {
 .howDo-left__sub {
   width: 50%;
   margin: 15px 0 60px;
-}
-
-.howDo-left .info {
-  width: 65%;
 }
 
 .howDo-left-item:first-child {
@@ -734,7 +737,6 @@ input, textarea, select, button {
 }
 
 .howDo-left-item:first-child .info {
-  width: 90%;
   padding: 15px 0;
 }
 
@@ -754,8 +756,8 @@ input, textarea, select, button {
   width: 40%;
 }
 
-.howDo-right .info {
-  width: 65%;
+.howDo-right .info .howDo__text {
+  margin: 15px 0 35px;
 }
 
 .scanning-page .wrapper {
@@ -769,6 +771,7 @@ input, textarea, select, button {
 
 .scanning-page .wrapper .getAquote {
   border: none;
+  margin-right: 30px;
 }
 
 .scanning-page .wrapper__title {

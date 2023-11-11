@@ -158,6 +158,9 @@ body {
   margin: 50px auto 0;
   position: relative;
   z-index: 2;
+  .container {
+    padding: 0;
+  }
   &__img {
     position: absolute;
     top: 0;
@@ -180,7 +183,7 @@ body {
   }
 }
 .getAquote {
-  width: 571px;
+  width: 560px;
   padding: 61px 57px;
   color: rgba(255, 255, 255, 0.40);
   background: #0D0D0D;
@@ -343,6 +346,7 @@ body {
     margin-top: 0;
     .getAquote {
       border: none;
+      margin-right: 30px;
     }
   }
   .printing {
@@ -476,6 +480,7 @@ body {
         font-size: 17px;
         line-height: 25px;
         color: #6B6B6B;
+        margin-top: 7px;
       }
       &:last-child {
         .cnc-item__text {
@@ -502,6 +507,9 @@ body {
         color: #6B6B6B;
       }
     }
+    // .col-lg-4:last-child .offer-item {
+    //   margin-top: 50px;
+    // }
   }
 }
 .title__text {
@@ -520,6 +528,7 @@ body {
     margin-top: 0;
     .getAquote {
       border: none;
+      margin-right: 30px;
     }
     &__title {
       color: #fff;
@@ -527,9 +536,6 @@ body {
   }
 }
 .howDo {
-  .container {
-    padding: 0;
-  }
   &__img {
     width: 100%;
     height: 100%;
@@ -555,15 +561,16 @@ body {
       margin-right: 5px;
     }
   }
+  
+  .info {
+    width: 90%;
+  }
   &-left {
     width: 60%;
     padding-top: 35px;
     &__sub {
       width: 50%;
       margin: 15px 0 60px;
-    }
-    .info {
-      width: 65%;
     }
     &-item {
       &:first-child {
@@ -572,7 +579,6 @@ body {
           margin: 15px 0 35px;
         }
         .info {
-          width: 90%;
           padding: 15px 0;
         }
       }
@@ -594,7 +600,9 @@ body {
   &-right {
     width: 40%;
     .info {
-      width: 65%;
+      .howDo__text {
+        margin: 15px 0 35px;
+      }
     }
   }
 }
@@ -608,6 +616,7 @@ body {
     margin-top: 0;
     .getAquote {
       border: none;
+      margin-right: 30px;
     }
     &__title {
       color: #fff;
