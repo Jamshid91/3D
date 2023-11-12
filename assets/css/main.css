@@ -237,7 +237,7 @@ input, textarea, select, button {
 }
 
 .getAquote {
-  width: 560px;
+  min-width: 550px;
   padding: 61px 57px;
   color: rgba(255, 255, 255, 0.4);
   background: #0D0D0D;
@@ -445,6 +445,10 @@ input, textarea, select, button {
   color: #979797;
 }
 
+.wrapper-text {
+  margin-top: 200px;
+}
+
 .cnc-page .wrapper {
   background-image: url(../img/png/cnc-bg.png);
   background-repeat: no-repeat;
@@ -456,6 +460,10 @@ input, textarea, select, button {
 .cnc-page .wrapper .getAquote {
   border: none;
   margin-right: 30px;
+}
+
+.cnc-page .wrapper .container {
+  padding: 0;
 }
 
 .cnc-page .printing__img {
@@ -679,6 +687,10 @@ input, textarea, select, button {
   color: #fff;
 }
 
+.howDo .container {
+  padding: 0;
+}
+
 .howDo__img {
   width: 100%;
   height: 100%;
@@ -755,6 +767,7 @@ input, textarea, select, button {
 
 .howDo-right {
   width: 40%;
+  height: 100%;
 }
 
 .howDo-right .info .howDo__text {
@@ -889,6 +902,18 @@ input, textarea, select, button {
   }
 }
 
+@media (max-width: 1200px) {
+  .getAquote {
+    min-width: 400px;
+  }
+  .cnc-page .wrapper__title,
+  .modeling-page .wrapper__title,
+  .scanning-page .wrapper__title {
+    font-size: 100px;
+    line-height: 90px;
+  }
+}
+
 @media (max-width: 991px) {
   .container {
     padding: 0 20px;
@@ -961,6 +986,9 @@ input, textarea, select, button {
   .services {
     margin-bottom: 40px;
   }
+  .services .container {
+    padding: 0 20px;
+  }
   .services__title {
     margin-bottom: 20px;
   }
@@ -984,6 +1012,9 @@ input, textarea, select, button {
   }
   .footer .social:first-child {
     margin-right: 5px;
+  }
+  .wrapper-text {
+    margin-top: 0;
   }
   .cnc-page .wrapper {
     margin-bottom: 30px;
@@ -1048,14 +1079,27 @@ input, textarea, select, button {
   .cnc-page .offer-item__icon {
     width: 100px;
   }
+  .cnc-page .container,
+  .modeling-page .container,
+  .scanning-page .container {
+    padding: 0 20px !important;
+  }
+  .cnc-page .wrapper .row:first-child,
   .modeling-page .wrapper .row:first-child,
   .scanning-page .wrapper .row:first-child {
     padding-top: 50px;
   }
+  .cnc-page .wrapper__title,
   .modeling-page .wrapper__title,
   .scanning-page .wrapper__title {
     font-size: 100px;
     line-height: 90px;
+    text-align: left !important;
+  }
+  .cnc-page .wrapper .wrapper-text,
+  .modeling-page .wrapper .wrapper-text,
+  .scanning-page .wrapper .wrapper-text {
+    margin-top: 0;
   }
 }
 
@@ -1111,6 +1155,7 @@ input, textarea, select, button {
   }
   .howDo-right {
     width: 100%;
+    height: auto;
   }
   .howDo .info {
     width: 100% !important;
@@ -1119,7 +1164,12 @@ input, textarea, select, button {
 
 @media (max-width: 575px) {
   .container {
-    padding: 0 15px;
+    padding: 0 15px !important;
+  }
+  .getAquote {
+    min-width: 300px;
+    width: 100%;
+    margin: 0 !important;
   }
   .wrapper {
     overflow: hidden;
@@ -1127,9 +1177,6 @@ input, textarea, select, button {
   .wrapper__title {
     font-size: 70px;
     line-height: 60px;
-  }
-  .getAquote {
-    width: 100%;
   }
   .services__title {
     font-size: 32px;
@@ -1216,6 +1263,7 @@ input, textarea, select, button {
   .cnc-page .offer {
     margin-bottom: 40px;
   }
+  .cnc-page .wrapper__title,
   .modeling-page .wrapper__title,
   .scanning-page .wrapper__title {
     font-size: 60px;

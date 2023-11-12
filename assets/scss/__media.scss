@@ -91,6 +91,21 @@
     }
   }
 }
+@media (max-width: 1200px) { 
+  .getAquote {
+    min-width: 400px;
+  } 
+  .cnc-page,
+  .modeling-page,
+  .scanning-page {
+     .wrapper {
+         &__title {
+             font-size: 100px;
+             line-height: 90px;
+         }
+     }
+  }
+}
 
 @media (max-width: 991px) {   
     .container {
@@ -155,6 +170,9 @@
   }
  .services {
     margin-bottom: 40px;
+    .container {
+      padding: 0 20px;
+    }
     &__title {
         margin-bottom: 20px;
     }
@@ -181,6 +199,9 @@
             margin-right: 5px;
           }
         }
+      }
+      .wrapper-text {
+        margin-top: 0;
       }
       .cnc-page {
         .wrapper {
@@ -245,9 +266,13 @@
             }
           }
       }
-      
+     
+  .cnc-page,
  .modeling-page,
  .scanning-page {
+  .container {
+    padding: 0 20px !important;
+  }
     .wrapper {
         .row:first-child {
         padding-top: 50px;
@@ -255,6 +280,10 @@
         &__title {
             font-size: 100px;
             line-height: 90px;
+            text-align: left !important;
+        }
+        .wrapper-text {
+          margin-top: 0;
         }
     }
  }
@@ -317,6 +346,7 @@
     }
     &-right {
       width: 100%;
+      height: auto;
     }
     
     .info {
@@ -327,17 +357,20 @@
 
 @media (max-width: 575px) {  
     .container {
-        padding: 0 15px;
+        padding: 0 15px !important;
     }
+    .getAquote {
+      min-width: 300px;
+      width: 100%;
+      margin: 0 !important;
+    }
+
     .wrapper {
         overflow: hidden;
     &__title {
       font-size: 70px;
       line-height: 60px;
     }
-  } 
-  .getAquote {
-    width: 100%;
   }
   .services {
     &__title {
@@ -414,6 +447,7 @@
     margin-bottom: 40px;
   }
  }
+ .cnc-page,
  .modeling-page,
  .scanning-page {
     .wrapper {
